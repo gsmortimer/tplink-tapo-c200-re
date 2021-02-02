@@ -12,8 +12,8 @@ Reverse Engineering the TP-Link Tapo C200 camera
 
 ### Flash Layout
 
-| dev	  | start	           | end              | size            |  erasesize    | name          | notes
-| ----- | ---------------  | ---------------- | --------------- | ------------- | ------------- | ----------
+| dev	  | start	           | end              | size            |  erasesize    | name          | 
+| ----- | ---------------  | ---------------- | --------------- | ------------- | ------------- | 
 | mtd0	| 0x000000000000   | 0x00000001d800   | x               | x	            | factory_boot  |
 | mtd1	| 0x00000001d800   | 0x000000020000   | x               | x             | factory_info  |
 | mtd2	| 0x000000020000   | 0x000000040000   | x               | x	            | art           |
@@ -22,7 +22,7 @@ Reverse Engineering the TP-Link Tapo C200 camera
 | mtd5  | 0x000000060000   | 0x0000001c6400   | x               | x             | kernel        | 
 | mtd6  | 0x0000001c6400   | 0x000000710000   | x               | x             | rootfs        |
 | mtd7  | 0x000000710000   | 0x000000800000   | x               | x             | rootfs_data   | 
-| mtd8  | 0x000000060000   | 0x000000800000   | x               | x             | firmware      |  copy of rootfs, plus kernel?
+| mtd8  | 0x000000060000   | 0x000000800000   | x               | x             | firmware      |
 
 
 - - - - -
