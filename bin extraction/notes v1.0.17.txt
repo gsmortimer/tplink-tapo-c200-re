@@ -1,0 +1,36 @@
+Tapo_C100v1_en_1.0.17_Build_201112_Rel.29622n__1608109639905.bin
+
+Block size assumed to be 256 bytes
+Investigated using binwalk & hexdump
+
+2 block header data (unknown)
+
+boot image
+Start: 0x200 (block 2)
+Length 256 blocks 
+LZMA data starts at 0x6200 (block 98)
+Finish: 0x10200 (block 258)
+
+kernel image
+Start: 0x10200 (block 258)
+Length 5728 blocks
+Finish: 0x176200 block 5986
+
+rootfs
+Start: at 0x176200 (block 5986)
+Length 0x63A500, 25509 blocks, but mtd6 is only 0x549C000, 21660 blocks
+Finish: at block 31495, may finish earlier?
+
+Other files:
+file archive 1: tar.gz
+Start: block 31495
+Length: 64436 Bytes (not block aligned)
+
+Unknown data:
+Length: 256 bytes (not block aligned)
+
+file archive 1: tar.gz
+Length: 63262 Bytes (not header aligned)
+
+Final 2 bytes: 0xFFFF
+
