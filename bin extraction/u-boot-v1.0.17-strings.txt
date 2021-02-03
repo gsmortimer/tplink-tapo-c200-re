@@ -1,0 +1,499 @@
+Extracted strings from u-boot image, v1.0.17
+
+
+set_default_env
+bootargs=console=ttyS1,57600 root=/dev/mtdblock6 rts-quadspi.channels=dual
+bootcmd=sf probe;sf read 0x82000000 0x60000 0x300000;bootm 0x82000000 
+bootdelay=1
+baudrate=57600
+ethaddr=00:00:00:00:00:00
+bootaddr=(0xBC000000 + 0x120000)
+loadaddr=0x80100000
+addmisc=setenv bootargs ${bootargs}console=ttyS0,${baudrate}panic=1
+bootfile=/vmlinux.img
+load=tftp 80500000 ${u-boot}
+0123456789ABCDEF|W
+aroc
+sdxbim
+0123456789abcdef
+EPTGMK
+*** reset failed ***
+baudrate
+DRAM:  
+ @ %d MHz
+*** failed ***
+Flash: 
+loadaddr
+Net:   
+bootargs
+memsize
+cpufreq
+0x%08X
+flash_start
+0x%X
+flash_size
+ethaddr
+eth1addr
+exit spi mode fail
+Starting kernel ...
+*E: Channel is occupied
+*E: set SRC_ADDR Failed!%x %x
+*E: set DST_ADDR Failed! %x
+force spi nor mode
+spi nor rescue mode
+spi nand rescue mode
+emmc rescue mode
+spi nor boot mode
+spi nand boot mode
+emmc boot mode
+Board: IPCAM RTS3903 CPU: %dM :
+rx5381
+rx4381
+rx5271
+rx4271
+rx5281
+rx4281
+ prid=0x%x
+set watchdog, resetting...
+reset
+Perform RESET of the CPU
+(none)
+## Booting image at %08lx ...
+   Uncompressing %s ... 
+Kernel Image
+LZMA ERROR %d - must RESET board to recover
+bootm
+boot application image from memory
+alias for 'help'
+help
+print command description/usage
+Base Address: 0x%08lx
+%08lx:
+ %08x
+ %04x
+ %02x
+base
+print or set address offset
+memory modify (constant address)
+memory modify (auto-incrementing address)
+memory display
+gatewayip
+netmask
+hostname
+rootpath
+ipaddr
+serverip
+dnsip
+domain
+tftpboot
+boot image via network using TFTP protocol
+bootp
+boot image via network using BOOTP/TFTP protocol
+%s=%s
+## Error: cannot export environment
+Environment size: %d/%ld bytes
+## Error: "%s" not defined
+## Resetting to default environment
+## Error: illegal character '='in variable name "%s"
+## Can't malloc %d bytes
+## Error inserting "%s" variable, errno=%d
+setenv
+env_buf [%d bytes] too small for value of "%s"
+set environment variables
+printenv
+print environment variables
+environment handling commands
+default
+delete
+print
+set ethaddr fail
+setethaddr
+set eth address
+set ip address fail
+setipaddr
+set ip address
+%d %s: %d ticks, %d KiB/s %d.%03d Mbps
+read
+erase
+write
+malloc
+Updating, %zu%% %lu B/s
+SPI flash failed in %s step
+%zu bytes written, %zu bytes skipped
+ in %ld.%lds, speed %ld B/s
+Read
+Written
+ERROR
+probe
+Failed to initialize SPI flash at %u:%u
+No SPI flash selected. Please run `sf probe'
+update
+ERROR: attempting %s past flash size (%#x)
+Failed to map physical memory
+SF: %zu bytes @ %#x %s: %s
+SF: %zu bytes @ %#x Erased: %s
+sftest
+not same
+test
+Cannot allocate memory
+SPI flash test:
+Erase failed
+Check read failed
+Check failed at %d
+Write failed
+Read failed
+Verify failed at %d, good data:
+Bad data:
+Test passed
+Test failed
+SPI flash sub-system
+check
+mips-linux-uclibc-xgcc (Realtek RSDK-4.8.5p1 Build 2521) 4.8.5 20150209 (prerelease)
+GNU ld (Realtek RSDK-4.8.5p1 Build 2521) 2.24.0
+version
+print monitor, compiler and linker version
+%s - %s
+%-*s- %s
+Unknown command '%s' - try 'help' without arguments for list of all known commands
+Unknown command '%s' - try 'help'
+stdin
+stdout
+stderr
+Can't delete "%s"
+In:    
+No input devices available!
+Out:   
+No output devices available!
+Err:   
+No error devices available!
+console
+.callbacks:callbacks,.flags:flags,baudrate:baudrate,bootfile:bootfile,loadaddr:loadaddr,stdin:console,stdout:console,stderr:console,
+.callbacks
+callbacks
+*** Warning - %s, using default environment
+Using default environment
+ERROR: Environment import failed: errno = %d
+at %s:%d/%s()
+env_common.c
+!bad CRC
+ERROR: Cannot import environment: errno = %d
+at %s:%d/%s()
+!import failed
+ethaddr:ma,
+## Warning: Unknown environment variable type '%c'
+## Warning: Unknown environment variable access method '%c'
+.flags
+## Error: flags type check failure for "%s" <= "%s" (type: %c)
+## Error: Can't delete "%s"
+## Error: Can't overwrite "%s"
+oldval: %s  defval: %s
+## Error: Can't create "%s"
+flags
+user write uboot to flash
+Timeout writing to Flash
+Flash not Erased
+Can't write to protected Flash sectors
+Outside available Flash
+Start and/or end address not on sector boundary
+Unknown Vendor of Flash
+Unknown Type of Flash
+General Flash Programming Error
+Flash Programming Aborted
+%s[%d] FIXME: rc=%d
+flash.c
+CRC32 for %08lx ... %08lx ==> %08lx
+crc32
+bootm_low
+bootm_size
+bootm_mapsize
+%d Bytes = 
+%4d-%02d-%02d  %2d:%02d:%02d UTC
+Unknown OS
+Unknown Architecture
+Unknown Image
+Unknown Compression
+%sImage Name:   %.*s
+%sCreated:      
+%sImage Type:   
+%s %s %s (%s)
+%sData Size:    
+%sLoad Address: %08x
+%sEntry Point:  %08x
+%sContents:
+%s   Image %d: 
+%s    Offset = 0x%08lx
+## Loading init Ramdisk from Legacy Image at %08lx ...
+Bad Magic Number
+Bad Header Checksum
+   Verifying Checksum ... 
+Bad Data CRC
+No Linux %s Ramdisk Image
+Wrong Ramdisk Image Format
+## Loading init Ramdisk from multi component Legacy Image at %08lx ...
+initrd_high
+ramdisk - allocation error
+   Loading Ramdisk to %08lx, end %08lx ... 
+none
+uncompressed
+bzip2
+bzip2 compressed
+gzip
+gzip compressed
+lzma
+lzma compressed
+lzo compressed
+aisimage
+Davinci AIS image
+filesystem
+Filesystem Image
+firmware
+Firmware
+flat_dt
+Flat Device Tree
+kernel
+kernel_noload
+Kernel Image (no loading done)
+kwbimage
+Kirkwood Boot Image
+imximage
+Freescale i.MX Boot Image
+Invalid Image
+multi
+Multi-File Image
+omapimage
+TI OMAP SPL With GP CH
+pblimage
+Freescale PBL Boot Image
+ramdisk
+RAMDisk Image
+script
+Script
+standalone
+Standalone Program
+ublimage
+Davinci UBL image
+mxsimage
+Freescale MXS Boot Image
+Invalid OS
+linux
+Linux
+netbsd
+NetBSD
+Enea OSE
+plan9
+Plan 9
+rtems
+RTEMS
+u-boot
+U-Boot
+Invalid ARCH
+alpha
+Alpha
+Intel x86
+ia64
+IA64
+m68k
+M68K
+microblaze
+MicroBlaze
+mips
+MIPS
+mips64
+MIPS 64 Bit
+nios2
+NIOS II
+powerpc
+PowerPC
+s390
+IBM S390
+SuperH
+sparc
+SPARC
+sparc64
+SPARC 64 Bit
+blackfin
+Blackfin
+avr32
+AVR32
+nds32
+NDS32
+or1k
+OpenRISC 1000
+sandbox
+Sandbox
+** Too many args (max. %d) **
+## Command too long!
+bootdelay
+bootcmd
+bootdelaykey
+bootdelaykey2
+bootstopkey
+bootstopkey2
+Autobooting in %d seconds
+rlxboot# 
+<INTERRUPT>
+serial
+flash status is %x, %x
+flash status is %x, %x, %x
+flash status is %x
+SF: Detected %s with page size 
+, erase size 
+, total 
+, mapped at %p
+manuf %02x, jedec %04x, ext_jedec %04x
+GD25Q64C
+GD25Q128C
+GD25Q256C
+KH25L6406E
+MX25L6433F
+MX25L12835F
+MX25L25635F
+MX25L51245G
+MX66L1G45G
+W25Q64FV
+W25Q128FV
+W25Q256FV
+XM25QH64A
+XM25QH128A
+EN25QH64A
+unknown
+Error Rx
+Can not allocate memory of r8168
+invalid eth addr
+unknown chip version (%x)
+Realtek PCIe GBE Family Controller mcfg = %04d
+mac_version == Unknown
+r8168#%d
+00:00:00:00:00:00
+new_ethaddr = %s
+Realtek unknown chip version, assuming %s
+RTL8168B/8111B
+RTL8168C/8111C
+RTL8168CP/8111CP
+RTL8168D/8111D
+RTL8168DP/8111DP
+RTL8168E/8111E
+RTL8168E-VL/8111E-VL
+RTL8168F/8111F
+RTL8411
+RTL8168G/8111G
+RTL8168EP/8111EP
+RTL8168GU/8111GU
+8411B
+Unknown
+Cannot find console
+## Baudrate %d bps not supported
+## Switch baudrate to %d bps and press ENTER ...
+## Baudrate may not be deleted
+SPI_error: Fail to allocate rlx_spi_slave
+spi_flash_wait_busy: transfer error. 
+flash_rx_cmd:error when wait busy
+flash_tx_cmd:error when wait busy
+flash_set_status:flash_tx_cmd failed
+send channel = %x cmd = %x
+flash_disable_write: flash_tx_cmd wrdi failed
+flash_read: spi_flash_wait_busy failed
+flash_write: spi_flash_wait_busy failed
+%s, Build: %s
+jenkins-tapo_c100v1_testing-28
+%llu Bytes%s
+.%ld
+ %ciB%s
+ %0*x
+    %s
+### ERROR ### Please RESET the board ###
+## ERROR: unsupported match method: 0x%02x
+Env export buffer too small: %zu, but need %zu
+himport_r: can't insert "%s=%s" into hash table
+WARNING: '%s' neither in running nor in imported env!
+WARNING: '%s' not in imported env, deleting it!
+ERROR: Failed to allocate 0x%lx bytes below 0x%lx.
+ERROR: %s, %d
+LzmaDecode.c
+ERROR, %s, %d
+Stream with EOS marker is not supported
+Too big uncompressed stream
+Incorrect stream properties
+Not enough buffer for decompression
+Decoding error = %d
+.%03ld
+<NULL>
+%s:%u: %s: Assertion `%s' failed.
+%*llu
+%.*s
+## Warning: gatewayip needed but not set
+ARP Retry count exceeded; starting again
+bad length %d < %d
+bootfile
+*** WARNING: %s is too long (%d - max: %d) - truncated
+Host Name
+Root Path
+NIS Domain Name
+BOOTP broadcast %d
+Retry count exceeded; starting again
+ethact
+%s%daddr
+%saddr
+BUG: failure at %s:%d/%s()!
+eth.c
+BUG!
+eth%dmacskip
+ethmacskip
+Warning: %s MAC addresses don't match:
+Address in SROM is         %pM
+Address in environment is  %pM
+Warning: %s using MAC address from net device
+Board Net Initialization Failed
+CPU Net Initialization Failed
+Net Initialization Skipped
+No ethernet found.
+ethprime
+ [PRIME]
+Warning: eth device name has a space!
+Warning: failed to set MAC address
+ethrotate
+autoload
+netretry
+once
+ ICMP Host Redirect to %pI4 
+%d.%d.%d.%d
+nvlan
+vlan
+*** ERROR: `serverip' not set
+*** ERROR: `ipaddr' not set
+*** ERROR: No ethernet found.
+*** ERROR: `ethaddr' not set
+*** ERROR: `eth%daddr' not set
+Abort
+Bytes transferred = %ld (%lx hex)
+filesize
+fileaddr
+octet
+blksize%c%d%c
+File too large
+File has bad magic
+blksize
+TFTP error: First block is not block 1 (%ld)
+Starting again
+done
+TFTP error: '%s' (%d)
+Not retrying...
+Starting again
+%s; starting again
+Retry count exceeded
+tftpblocksize
+tftptimeout
+TFTP timeout (%ld ms) too low, set minimum = 1000 ms
+%02X%02X%02X%02X.img
+*** Warning: no boot file name; using '%s'
+Using %s device
+TFTP %s server %pI4; our IP address is %pI4
+from
+; sending through gateway %pI4
+Filename '%s'.
+ Size is 0x%x Bytes = 
+Load address: 0x%lx
+Loading: *
+        
+U-Boot 2014.01-v1.2 (Nov 12 2020 - 08:05:29)
+rlxboard_serial
